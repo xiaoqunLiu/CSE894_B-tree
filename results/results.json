@@ -1,0 +1,107 @@
+[
+  {
+    "workload": "W1_sequential",
+    "n_ops": 300,
+    "remaining_keys": 100,
+    "order": 5,
+    "baseline": {
+      "height": 3,
+      "avg_search_path": 4.0,
+      "node_utilization": 0.514,
+      "node_count": 71,
+      "splits": 142,
+      "merges": 75,
+      "borrows": 2
+    },
+    "freeze_replace": {
+      "height": 3,
+      "avg_search_path": 4.0,
+      "node_utilization": 0.514,
+      "live_node_count": 71,
+      "splits": 142,
+      "joins": 75,
+      "borrows": 2,
+      "copies": 2,
+      "state_transitions": 1333,
+      "staged_parent_rewrites": 219,
+      "temp_key_duplications": 944
+    },
+    "invariants": {
+      "monotonic_state_violations": 0,
+      "infant_reachable_violations": 0,
+      "search_continuity_misses": 0,
+      "join_consistency_violations": 0,
+      "internal_invariant_violations": 0
+    }
+  },
+  {
+    "workload": "W2_random",
+    "n_ops": 300,
+    "remaining_keys": 100,
+    "order": 5,
+    "baseline": {
+      "height": 3,
+      "avg_search_path": 4.0,
+      "node_utilization": 0.603,
+      "node_count": 59,
+      "splits": 88,
+      "merges": 33,
+      "borrows": 35
+    },
+    "freeze_replace": {
+      "height": 3,
+      "avg_search_path": 4.0,
+      "node_utilization": 0.603,
+      "live_node_count": 59,
+      "splits": 88,
+      "joins": 33,
+      "borrows": 35,
+      "copies": 35,
+      "state_transitions": 1023,
+      "staged_parent_rewrites": 156,
+      "temp_key_duplications": 687
+    },
+    "invariants": {
+      "monotonic_state_violations": 0,
+      "infant_reachable_violations": 0,
+      "search_continuity_misses": 0,
+      "join_consistency_violations": 0,
+      "internal_invariant_violations": 0
+    }
+  },
+  {
+    "workload": "W3_mixed",
+    "n_ops": 800,
+    "remaining_keys": 353,
+    "order": 5,
+    "baseline": {
+      "height": 4,
+      "avg_search_path": 5.0,
+      "node_utilization": 0.67,
+      "node_count": 180,
+      "splits": 194,
+      "merges": 19,
+      "borrows": 47
+    },
+    "freeze_replace": {
+      "height": 4,
+      "avg_search_path": 5.0,
+      "node_utilization": 0.67,
+      "live_node_count": 180,
+      "splits": 194,
+      "joins": 19,
+      "borrows": 47,
+      "copies": 47,
+      "state_transitions": 1550,
+      "staged_parent_rewrites": 260,
+      "temp_key_duplications": 1230
+    },
+    "invariants": {
+      "monotonic_state_violations": 0,
+      "infant_reachable_violations": 0,
+      "search_continuity_misses": 0,
+      "join_consistency_violations": 0,
+      "internal_invariant_violations": 0
+    }
+  }
+]
