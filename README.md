@@ -12,7 +12,6 @@ src/
   invariants.py             checker for the four correctness invariants
   evaluate.py               runs both trees on three workloads, prints results
   make_charts.py            builds the comparison figures used in the report
-  build_report.py           builds the final PDF report
   results/
     results.json              raw numbers from the evaluation
     fig_structural_events.png chart used in the report
@@ -24,9 +23,8 @@ src/
 From the project root:
 
 ```
-python3 src/evaluate.py        # run both trees, save results.json, print summary
-python3 src/make_charts.py     # build the two PNG charts
-python3 src/build_report.py    # build project_report.pdf
+python3 evaluate.py        # run both trees, save results.json, print summary
+python3 make_charts.py     # build the two PNG charts
 ```
 
 `evaluate.py` cross-checks at the end of each workload that
